@@ -23,17 +23,18 @@ div.removed {
  
     30% {
         opacity: 1;
-        transform: translateX(-30px);
+        transform: translateX(-10px);
     }
  
     100% {
         opacity: 1;
-        transform: translateX(800px);
+        transform: translateX(1000px);
     }
 }
 
 
 #sidebar {
+
   .checkbox-inline {
     width: 40%;
     margin-bottom: 2%;
@@ -50,11 +51,9 @@ div.removed {
 }
 
 #right {
-  padding-left: 30px;
 
   #more {
     width: $full;
-    margin-top: 10px;
     margin-bottom: 20px;
   }
 

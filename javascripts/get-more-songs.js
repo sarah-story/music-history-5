@@ -1,4 +1,4 @@
-define(function() {
+define(['jquery'], function($) {
 
   //same as populate-songs function, except
   //the endpoint is different  

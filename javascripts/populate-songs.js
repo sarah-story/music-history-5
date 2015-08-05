@@ -1,4 +1,4 @@
-define( function() {
+define(['jquery'], function($) {
   
   //return a function that executes the AJAX call
   //it takes the write to HTML function and the 

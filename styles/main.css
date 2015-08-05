@@ -14,16 +14,10 @@ div.removed {
     transform: translateX(0); }
   30% {
     opacity: 1;
-    transform: translateX(-30px); }
-  80% {
-    opacity: 1;
-    transform: translateX(800px); }
-  99% {
-    opacity: 0;
-    transform: translateX(800px); }
+    transform: translateX(-10px); }
   100% {
-    opacity: 0;
-    transition: translateX(0); } }
+    opacity: 1;
+    transform: translateX(1000px); } }
 #sidebar .checkbox-inline {
   width: 40%;
   margin-bottom: 2%; }
@@ -32,18 +26,15 @@ div.removed {
 #sidebar select, #sidebar input[type='range'] {
   margin-bottom: 10px; }
 
-#right {
-  padding-left: 30px; }
-  #right #more {
-    width: 100%;
-    margin-top: 10px;
-    margin-bottom: 20px; }
-  #right .btn-xs {
-    float: right;
-    margin-top: 5%; }
-  #right h2 {
-    float: left; }
-  #right p {
-    clear: both; }
+#right #more {
+  width: 100%;
+  margin-bottom: 20px; }
+#right .btn-xs {
+  float: right;
+  margin-top: 5%; }
+#right h2 {
+  float: left; }
+#right p {
+  clear: both; }
 
 /*# sourceMappingURL=main.css.map */
