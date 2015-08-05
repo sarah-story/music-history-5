@@ -1,0 +1,49 @@
+div.new {
+  opacity: 0;
+  animation: fadeIn .3s linear forwards; }
+
+@keyframes fadeIn {
+  to {
+    opacity: 1; } }
+div.removed {
+  animation: removed-item-animation 0.8s cubic-bezier(0.65, -0.02, 0.72, 0.29); }
+
+@keyframes removed-item-animation {
+  0% {
+    opacity: 1;
+    transform: translateX(0); }
+  30% {
+    opacity: 1;
+    transform: translateX(-30px); }
+  80% {
+    opacity: 1;
+    transform: translateX(800px); }
+  99% {
+    opacity: 0;
+    transform: translateX(800px); }
+  100% {
+    opacity: 0;
+    transition: translateX(0); } }
+#sidebar .checkbox-inline {
+  width: 40%;
+  margin-bottom: 2%; }
+#sidebar #filter {
+  width: 100%; }
+#sidebar select, #sidebar input[type='range'] {
+  margin-bottom: 10px; }
+
+#right {
+  padding-left: 30px; }
+  #right #more {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px; }
+  #right .btn-xs {
+    float: right;
+    margin-top: 5%; }
+  #right h2 {
+    float: left; }
+  #right p {
+    clear: both; }
+
+/*# sourceMappingURL=main.css.map */

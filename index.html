@@ -1,0 +1,102 @@
+<!doctype HTML>
+
+<html lang='en'>
+<head>
+  <meta charset='utf-8'>
+  <title>Music History</title>
+  <link rel="stylesheet" type="text/css" href="https://bootswatch.com/flatly/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="styles/main.css">
+</head>
+
+<!--Navbar-->
+
+<body>
+  <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"> <span class="glyphicon glyphicon-music" aria-hidden="true"></span></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">View Music<span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Add Music</a></li>
+        <li><a href="#">Profile</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+  <div class="container-fluid">
+    
+    <!--Left-side Form-->
+    
+    <div class="col-md-4 well" id="sidebar">
+      <label for="slider">Song Length:</label><br>
+      <input id="length" type="range" name="slider">
+      <label for="artist">Artist:</label>
+      <select class="form-control" id="artist">
+        <option></option>
+        <option>Taylor Swift</option>
+        <option>Zac Brown Band</option>
+        <option>Tim McGraw</option>
+        <option>Carrie Underwood</option>
+      </select>
+      <label for="album">Album:</label>
+      <select class="form-control" id="album">
+        <option></option>
+        <option>Taylor Swift</option>
+        <option>You Get What You Give</option>
+        <option>Spring Break</option>
+        <option>Blown Away</option>
+      </select>
+      <label>Genre:</label>
+      <br>
+      <div>
+        <label class="checkbox-inline">
+          <input type="checkbox" id="inlineCheckbox2" value="option2"> Rock
+        </label>
+         <label class="checkbox-inline">
+          <input type="checkbox" id="inlineCheckbox2" value="option2"> Classical
+        </label>
+      </div>
+      <div>
+        <label class="checkbox-inline">
+          <input type="checkbox" id="inlineCheckbox2" value="option2"> Pop
+        </label>
+         <label class="checkbox-inline">
+          <input type="checkbox" id="inlineCheckbox2" value="option2"> Jazz
+        </label>
+      </div>
+      <div>
+        <label class="checkbox-inline">
+          <input type="checkbox" id="inlineCheckbox2" value="option2"> Blues
+        </label>
+         <label class="checkbox-inline">
+          <input type="checkbox" id="inlineCheckbox2" value="option2"> Hip-Hop
+        </label>
+      </div>
+
+      <button class="btn btn-danger" type="submit" id="filter">Filter</button>
+    </div>
+    <!--Right-side Song Info-->
+
+      <div class="col-md-8" id="right">
+
+      <button class="btn btn-success" id="more">See More</button>
+      </div>
+    </div>
+  </div>
+  <script src = '/bower_components/jquery/dist/jquery.min.js'></script>
+  <script src = '/bower_components/bootstrap/dist/js/bootstrap.min.js'></script>
+  <script data-main="javascripts/main" src = '/bower_components/requirejs/require.js'></script>
+
+</body>
